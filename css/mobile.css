@@ -95,65 +95,160 @@
 }
 
 /* card */
-.containerCard{
+.containerCard {
   position: relative;
   overflow: hidden;
-  margin:0 20px;
+  margin: 0 20px;
 }
-.slides{
+.slides {
   margin-top: 40px;
   padding-top: 80px;
   display: flex;
 }
 
-.card{
- min-width: 100%;
- padding: 10px;
- padding-top: 60px;
- position: relative;
- display: flex;
- flex-direction: column;
- justify-content: center;
- align-items: center; 
- background-color: #fafafa ;
- 
- img{
-  position: absolute;
-  width: 70px;
-  top: -40px;
- }
- h4{
-  font-size: 1.2rem;
-  color: rgb(35, 40, 78);
- }
- p{
-  font-size: .9rem;
- }
+.card {
+  min-width: 100%;
+  padding: 10px;
+  padding-top: 60px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fafafa;
 
+  img {
+    position: absolute;
+    width: 70px;
+    top: -40px;
+  }
+  h4 {
+    font-size: 1.2rem;
+    color: rgb(35, 40, 78);
+  }
+  p {
+    font-size: 0.9rem;
+  }
 }
-
-.bars{
-    display: flex;
-    justify-content: center;
-    gap: 5px;
-    margin-top: 10px;
+/* selectores slider */
+.bars {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin-top: 10px;
 }
-.bar{
+.bar {
   width: 10px;
-  height: 10px; 
+  height: 10px;
   border: 1px solid rgb(242, 95, 58);
   border-radius: 50%;
   margin-bottom: 40px;
 }
 
-.barActive{
-    background-color: rgb(242, 95, 58);
+.barActive {
+  background-color: rgb(242, 95, 58);
 }
 
+/* footer */
+footer {
+  margin-top: 40px;
+  position: relative;
+}
+.teamWorks {
+  background-color: rgb(242, 95, 58);
+  margin: auto;
+  position: relative;
+  z-index: 10;
+  overflow: hidden;
+  text-align: center;
+  padding: 80px 20px;
 
+  img {
+    position: absolute;
+    top: 20%;
+    left: 0;
 
+    z-index: -1;
+  }
+  div > h3 {
+    color: #fafafa;
+    font-size: 2.4rem;
+    font-weight: 600;
+  }
+  .btnStart {
+    background-color: #fafafa;
+    color: rgb(242, 95, 58);
+    font-weight: 800;
+    box-shadow: none;
+  }
+}
+.footSectionContact {
+  background: hsl(233, 12%, 13%);
+}
 
+.footContactContainer {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  padding: 25px;
+}
+.footImg {
+  display: flex;
+  flex-direction: column-reverse;
+  width: 100%;
+  margin: 40px 0;
+  & > img {
+    width: 190px;
+    margin: auto;
+    margin-bottom: 40px;
+  }
+  ul {
+    display: flex;
+    margin-bottom: 40px;
+    justify-content: space-between;
+    & > li > a > img {
+      width: 40px;
+    }
+  }
+}
+.sectionLinks {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 20px;
+  .links > li > a {
+    margin: 10px;
+    display: block;
+    color: rgb(144, 149, 167);
+  }
+}
+form {
+  display: flex;
+width: 100%;
+justify-content: center;
+margin-top: 40px;
 
+align-items: center;
+  input {
+    margin-right: 15px;
+    border-radius: 22px;
+    padding: 13px;
+    min-width: 240px;
+    color: rgb(242, 95, 58);
+    font-weight: 500;
+  }
+  & > .btn{
+    background-color: rgb(242, 95, 58);
+    color: #fafafa;
+    margin: 0;
+  }
+}
+.copyR {
+  position: absolute;
+  bottom: 20px;
+  color: rgb(144, 149, 167);
+  font-size: 0.8rem;
+}
 
 /* generales */
 .btn {
@@ -211,4 +306,7 @@
   color: white;
   font-weight: 600;
   position: absolute;
+}
+.desktop {
+  display: none;
 }
