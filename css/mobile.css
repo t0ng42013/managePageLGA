@@ -94,6 +94,65 @@
   font-size: 0.9rem;
 }
 
+/* card */
+.containerCard{
+  position: relative;
+  overflow: hidden;
+  margin:0 20px;
+}
+.slides{
+  margin-top: 40px;
+  padding-top: 80px;
+  display: flex;
+}
+
+.card{
+ min-width: 100%;
+ padding: 10px;
+ padding-top: 60px;
+ position: relative;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center; 
+ background-color: #fafafa ;
+ 
+ img{
+  position: absolute;
+  width: 70px;
+  top: -40px;
+ }
+ h4{
+  font-size: 1.2rem;
+  color: rgb(35, 40, 78);
+ }
+ p{
+  font-size: .9rem;
+ }
+
+}
+
+.bars{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 10px;
+}
+.bar{
+  width: 10px;
+  height: 10px; 
+  border: 1px solid rgb(242, 95, 58);
+  border-radius: 50%;
+  margin-bottom: 40px;
+}
+
+.barActive{
+    background-color: rgb(242, 95, 58);
+}
+
+
+
+
 
 
 /* generales */
