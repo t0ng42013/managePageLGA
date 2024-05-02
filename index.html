@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/mobile.css" />
+    <link rel="stylesheet" href="./css/styleDesk.css" media="screen and (min-width: 600px)"/>
+    <link rel="stylesheet" href="./css/mobile.css" media="screen and (max-width: 600px)"/>
     <title>Frontend Mentor | Manage landing page</title>
   </head>
   <body>
@@ -25,7 +26,7 @@
           <li><a href="#">Community</a></li>
         </ul>
 
-        <button class="btn btn-start desk">Get Started</button>
+        <button class="btn btn-desk desk btnStart">Get Started</button>
         <!-- botón hamburguesa -->
         <div id="btnHamburger" class="header__navbar--hamburger">
           <img
@@ -121,8 +122,10 @@
       <section class="sectionCard">
         <h3 class="h3">What they’ve said</h3>
 
-        <div id="containerSld" class="containerCard">
+        <div 
+        id="containerSld" class="containerCard">
           <div class="slides">
+            
             <div class="card">
               <img
                 class="cardImg"

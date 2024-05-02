@@ -22,3 +22,35 @@ bars.forEach((i) => {
     
   });
 });
+
+
+// slides desktop
+const card = document.querySelector(".card");
+let ancho = slides.clientWidth
+let bandera = ancho
+
+slides.addEventListener('click', (e) => { 
+ 
+  if(ancho > 599){
+    const card = document.querySelectorAll(".card");
+    if(bandera <= 2000) {
+    
+    card.forEach((slide) =>{
+      slide.style.transform +="translate(-540px)"
+    } )
+   
+    bandera += 550;
+    console.log(bandera);
+    }
+    if (bandera >= 2263){
+      setTimeout(() => {
+        bandera = ancho
+      card.forEach((slide) => {
+        slide.style.transform = "translateX(0px)"
+      })
+      }, 2000);
+
+    }
+  }
+  
+});
