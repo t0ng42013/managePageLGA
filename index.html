@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/styleDesk.css" media="screen and (min-width: 600px)"/>
-    <link rel="stylesheet" href="./css/mobile.css" media="screen and (max-width: 600px)"/>
+    <link rel="stylesheet" href="./css/styleDesk.css" media="screen and (min-width: 800px)"/>
+    <link rel="stylesheet" href="./css/mobile.css" media="screen and (max-width: 800px)"/>
     <title>Frontend Mentor | Manage landing page</title>
   </head>
   <body>
@@ -34,8 +34,14 @@
             src="./assets/images/icon-hamburger.svg"
             alt="btn-hamburger"
           />
-        </div>
+          <img 
+          class="close"
+          src="./assets/images/icon-close.svg"
+           alt="btn-close">
+          </div>
       </nav>
+      
+      <div class="overlay"></div>
 
       <section class="header__hero">
         <div class="header__hero--info">
@@ -56,16 +62,18 @@
 
       <figure class="header__deco--middel">
         <img
-          class="header__hero--bg-tablet middle"
+          class="header__hero--bg-tablet middle "
           src="./assets/images/bg-tablet-pattern.svg"
           alt="deco"
         />
       </figure>
+
       <img
-        class="header__hero--bg-tablet"
+        class="header__hero--bg-tablet mobile"
         src="./assets/images/bg-tablet-pattern.svg"
         alt="bg-tablet-pattern"
       />
+   
     </header>
 
     <main>
@@ -269,7 +277,7 @@
               />
 
               <button 
-              class="btn"
+              class="btn btnForm"
               type="submit">Go</button>
             </form>
 

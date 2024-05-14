@@ -4,6 +4,20 @@ const menuMobile = document.getElementById("menuMobile");
 
 btnHamburger.addEventListener("click", () => {
   menuMobile.classList.toggle("showMenu");
+  const btnHamburger = document.querySelector(".hamburger");
+  const btnClose = document.querySelector(".close");
+  const over = document.querySelector(".overlay");
+
+  if(menuMobile.classList.contains("showMenu")){
+    btnHamburger.style.display = "none";
+    btnClose.style.display = "block";
+    over.style.display = "block";
+    return
+    }
+    btnHamburger.style.display = "block";
+    btnClose.style.display = "none";
+    over.style.display = "none";
+
 });
 
 // slider de card
@@ -29,28 +43,21 @@ const card = document.querySelector(".card");
 let ancho = slides.clientWidth
 let bandera = ancho
 
-slides.addEventListener('click', (e) => { 
- 
-  if(ancho > 599){
-    const card = document.querySelectorAll(".card");
-    if(bandera <= 2000) {
-    
-    card.forEach((slide) =>{
-      slide.style.transform +="translate(-540px)"
-    } )
-   
-    bandera += 550;
-    console.log(bandera);
-    }
-    if (bandera >= 2263){
-      setTimeout(() => {
-        bandera = ancho
-      card.forEach((slide) => {
-        slide.style.transform = "translateX(0px)"
-      })
-      }, 2000);
-
-    }
-  }
+// Agregar evento wheel al div scrollable
+slides.addEventListener('wheel', (e) => {
+  // Obtener el desplazamiento horizontal actual
+  const currentScrollLeft = slides.scrollLeft;
   
+  // Calcular el nuevo desplazamiento basado en la dirección y cantidad del desplazamiento del evento de rueda
+  const newScrollLeft = currentScrollLeft + e.deltaY;
+  
+  // Aplicar el nuevo desplazamiento al div scrollable
+  slides.scrollLeft = newScrollLeft;
+  
+  // Prevenir el comportamiento predeterminado del evento de rueda para evitar desplazamiento de la ventana
+  e.preventDefault();
 });
+ 
+const btnForm = document.querySelector('.btnForm');
+
+btnForm.addEventListener('click',e => e.preventDefault());

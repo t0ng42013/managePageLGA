@@ -27,4 +27,8 @@
   background-color: rgb(242, 95, 58);
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
   margin-top: 40px;
+   &:hover {
+    background-color: #ff8e79;
+    transition: all 0.5s;
+  }
 }
